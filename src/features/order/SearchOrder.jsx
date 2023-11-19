@@ -7,7 +7,7 @@ export default function SearchOrder() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!query) return;
-    navigate(`/order/${query}`, { replace: true });
+    navigate(`/order/${query}`);
     setQuery("");
   }
   return (
